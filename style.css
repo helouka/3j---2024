@@ -1,122 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
 :root{
-    --cor-de-fundo: #000202;
-    --verde: #ffffff;
-    --branco: #e0ecee;
-    --botao-ativo: #cad0d3;
-    --botao-inativo: rgba(226, 40, 201, 0.5);
-    --texto-fundo: rgba(0, 0, 0, 0.3);
+    --cor-de-fundo: #e279d9;
+    --cor-primaria: #ffffff;
+    --cor-secundaria: #000000;
+    --fonte: "Nunito Sans", sans-serif;
 }
-
 *{
-    color: var(--branco);
+    margin: 0;
+    padding: 0;
 }
-
-span{
-    color: var(--verde);
-}
-body{
+body{background-color: var(--cor-de-fundo);
     background-color: var(--cor-de-fundo);
-}
-.conteudo-principal{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-width: 1200px;
-    width: 100%;
-    margin: 0 auto;
-
-}
-
-.titulo-principal{
-    text-align: center;
-    width: 100%;
-    font-size: 32px;
-}
-
-.botao{
-    background-color: var(--botao-inativo);
-    color: white;
-    display: flex;
-    justify-content: center;
-    /*Determina a posição horizontal no display flex*/
-    align-items: center;
-    /*Determina a posição vertical no display flex*/
-    width: 100%;
-    font-size: 18px;
-    /*Controla o tamanho da fonte*/
-    padding: 1em ;
-    /* Um afastamento interno */
-    border-bottom: 4px solid var(--botao-ativo);
-    border-left: 2px solid var(--botao-ativo);
-    border-right: 2px solid var(--botao-ativo);
-}
-.botoes{
- display: block;   
-}
-.botao:first-child{
-    border-radius: 20px 20px 0 0;
-}
-
-.botao:last-child{
-    border-radius: 0px 0px 20px 20px;
-}
-.botao.ativo{
-    background-color: var(--botao-ativo);
-    border-bottom: 2px solid var(--verde) ;
-}
-
-.aba-conteudo{
-    display: none;
-}
-.aba-conteudo.ativo{
-    display: block;
-}
-.abas-textos{
-    background-color: var(--botao-inativo);
-    padding: 40px;
-    border-radius: 15px;
-}
-.aba-conteudo-titulo-principal{
-    font-size: 28px;
-    text-align: center;
-}
-.aba-conteudo-titulo-secundario{
-    text-align: center;
-    color: var(--verde);
-    text-transform: uppercase;
-}
-
-.contador{
-    display:flex;
-    justify-content: center;
-}
-
-.contador-digito{
-    padding: 0 16px;
-    text-align: center;
-}
-
-.contador-digito-numero{
-    font-size: 80px;
+    color: var(--cor-primaria);
+    font-family: var(--fonte);
+    height: 100vh;
     margin: 0;
 }
-
-.contador-digito-texto{
-    color: var(--verde);
-    font-size: 20px;
-    margin: 0;
+header{
+    background-color: var(--cor-primaria);
+    text-align: center;
+}
+h1{
+    font-size: 2rem;
+    color: var(--cor-de-fundo);
+    font-weight: 700; /* PESO DA FONTE */
 
 }
 
-@media screen and (min-width: 700px){
-    .botoes{
-        display: flex;
-    }
-    .botao:first-child{
-        border-radius: 20px 0 0 20px;
-    }
-    .botao:last-child{
-        border-radius: 0 20px 20px 0;
-    }
+nav{
+    display: flex; /* ORGANIZA AS TEGS 'FILHAS' EM UM FLEX-BOX */
+    justify-content: center;
+    font-weight: 400;
+}
+
+nav a{
+    text-decoration: none;
+    color: var(--cor-de-fundo);
+    margin: 0 2rem 1rem 0;
+    font-size: 1.2rem;
+
+}
+
+nav a:hover{
+    text-decoration: underline;
+    transform: scale(0.9); /* Muda a escala */
+    transition: transform 1s;
 }
