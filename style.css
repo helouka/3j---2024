@@ -1,35 +1,37 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sofadi+One&display=swap');
 
 :root{
-    --cor-de-fundo: #e279d9;
-    --cor-primaria: #ffffff;
-    --cor-secundaria: #000000;
-    --fonte: "Nunito Sans", sans-serif;
+    --cor-de-fundo: #fa61e0;
+    --cor-primaria: #f3f1e9;
+    --cor-secundaria: #df18ad;
+    --fonte: "Mukta", sans-serif;
 }
 *{
     margin: 0;
     padding: 0;
 }
-body{background-color: var(--cor-de-fundo);
+
+body{
     background-color: var(--cor-de-fundo);
     color: var(--cor-primaria);
     font-family: var(--fonte);
     height: 100vh;
     margin: 0;
 }
+
 header{
     background-color: var(--cor-primaria);
     text-align: center;
 }
+
 h1{
     font-size: 2rem;
     color: var(--cor-de-fundo);
-    font-weight: 700; /* PESO DA FONTE */
-
+    font-weight: 700;
 }
 
 nav{
-    display: flex; /* ORGANIZA AS TEGS 'FILHAS' EM UM FLEX-BOX */
+    display: flex;
     justify-content: center;
     font-weight: 400;
 }
@@ -39,11 +41,27 @@ nav a{
     color: var(--cor-de-fundo);
     margin: 0 2rem 1rem 0;
     font-size: 1.2rem;
-
 }
 
 nav a:hover{
     text-decoration: underline;
-    transform: scale(0.9); /* Muda a escala */
+    transform: scale(1.3);
     transition: transform 1s;
+}
+span{
+    color: var(--cor-secundaria);
+    font-weight:bold;
+}
+footer{
+    text-align: center;
+    background-color: var(--cor-primaria);
+    color: var(--cor-de-fundo);
+}
+.graficos-container{
+    margin: 5rem;
+}
+.graficos-texto{
+    font-size: 1.3rem;
+    border: var(--cor-secundaria) solid 2px;
+    padding: 2rem;
 }
